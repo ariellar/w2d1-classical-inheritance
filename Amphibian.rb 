@@ -1,0 +1,16 @@
+require "Animal"
+
+
+class Amphibian < Animal
+  attr_reader :warm_blooded, :numlegs
+  def initialize
+    @numlegs = 4
+    @warm_blooded? = false
+    @can_fly? = false
+  end
+  def can_i_fly?
+    if @can_fly == false
+      "I believe I can fly, I believe I can touch the sky!!!! Oh no! I was wrong, I can't fly! AAAAAaaaaaaaaahhhhhhhh!"
+    end
+  end
+end
